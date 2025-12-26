@@ -64,9 +64,6 @@ trigger:
 condition: []
 action:
   - variables:
-      target_satellite_device: "{{ view_assist_entity(trigger.device_id) }}"
-      target_mediaplayer_device: "{{ state_attr(target_satellite_device, 'mediaplayer_device')}}"
-      target_satellite_device_type: "{{ state_attr(target_satellite_device, 'type')}}"
       language: !input language
       view: !input view
       team_tracker: !input team_tracker
