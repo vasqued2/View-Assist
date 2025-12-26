@@ -430,7 +430,7 @@ action:
           league_path: "{{ league_path }}"
   - if:
       - condition: template
-        value_template: "{{ (trigger.slots.team)|lower in college_teams }}"
+        value_template: "{{ true }}"
     then:
       - variables:
           query_team: "{{ college_teams[(trigger.slots.team)|lower]['team_id'] | lower}}"
