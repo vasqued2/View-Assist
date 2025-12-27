@@ -74,9 +74,9 @@ action:
     then:
       - variables:
           query_team: "{{ college_teams['lsu']['team_id'] }}"
-          sport_path: "{{ college_teams["LSU"]['sport_path'] }}"
-          league_path: "{{ college_teams["LSU"]['league_path'] }}"
-          conference_id: "{{ college_teams["LSU"]['conference_id'] | string}}"
+          sport_path: "{{ college_teams['lsu']['sport_path'] }}"
+          league_path: "{{ college_teams['lsu']['league_path'] }}"
+          conference_id: "{{ college_teams['lsu']['conference_id'] }}"
           is_singular: true
       - service: teamtracker.call_api
         target:
