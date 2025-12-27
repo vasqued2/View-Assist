@@ -73,7 +73,7 @@ action:
         value_template: "{{ true }}"
     then:
       - variables:
-          query_team: "{{ college_teams[\"LSU\"]['team_id'] }}"
+          query_team: "{{ college_teams['LSU']['team_id'] }}"
           sport_path: "{{ college_teams["LSU"]['sport_path'] }}"
           league_path: "{{ college_teams["LSU"]['league_path'] }}"
           conference_id: "{{ college_teams["LSU"]['conference_id'] | string}}"
